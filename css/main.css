@@ -44,6 +44,17 @@ a.email:hover {
 .main {
   padding: 20px;
 }
+.main h2 {
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 0;
+  line-height: 35px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.main h4 {
+  font-size: 16px;
+}
 .main .bar {
   padding: 5px;
 }
