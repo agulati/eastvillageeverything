@@ -15,10 +15,11 @@ body
   background-color #fff
 
 .header
-  padding 50px 30px 25px 30px
+  padding 25px 30px 25px 30px
   min-height 300px
   background-image url('../img/East_Village_Second_Avenue.jpg')
-  background-size auto 100%
+  background-size 100% 100%
+  background-repeat no-repeat
   font-family AmericanCaptain
   color #fff
 
@@ -29,7 +30,7 @@ body
   h3
     letter-spacing 3px
     text-align right
-    margin-top 40px
+    margin-top 90px
   h4
     letter-spacing 2px
     text-align right
@@ -42,9 +43,17 @@ a.email
 .main
   padding 20px
 
+  .filters
+    margin-bottom 20px
+
+    button
+      padding 2px 8px
+
+  .title
+    margin-bottom 10px
+
   h2
     font-size 20px
-    padding-left 20px
     margin-top 0
     line-height 35px
     margin-bottom 10px
@@ -58,6 +67,15 @@ a.email
 
     &:nth-child(even)
       background-color #eee
+
+.rail
+  padding 20px
+
+  h2
+    font-size 20px
+    margin-top 0
+    line-height 35px
+    margin-bottom 10px
 
 ul.blogs
   list-style none
