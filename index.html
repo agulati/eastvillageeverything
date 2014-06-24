@@ -38,13 +38,13 @@
           </div>
 
           <div class='row filters' ng-controller="tagsController" >
-            <h4 class="col-sm-5 tags pull-left title">Looking for something in particular?</h4>
-            <div class="col-sm-7 pull-left">
-            <select class="filter form-control">
-              <option value="none">Anything</option>
-              <option ng-repeat="(value, display) in tags" value="{{value}}" >{{display}}</option>
-            </select>
-          </div>
+            <div class="col-sm-12 form-group">
+              <label for="tags">Looking for something in particular?</label>
+              <select name="tags" class="filter form-control">
+                <option value="none">Anything</option>
+                <option ng-repeat="(value, display) in tags" value="{{value}}" >{{display}}</option>
+              </select>
+            </div>
           </div>
 
           <div class='row title'>
@@ -68,9 +68,9 @@
             <div ng-bind-html="place.specials" class='col-sm-5'>
               {{place.specials}}
             </div>
-            <div ng-bind-html="place.notes" class='col-sm-4'>
-              <i><b>{{place.categories}}</b></i><br/>
-              {{place.notes}}
+            <div class='col-sm-4'>
+              <div class="categories">{{place.categories}}</div>
+              <div ng-bind-html="place.notes" class="notes">{{place.notes}}</div>
             </div>
           </div>
         </div>
