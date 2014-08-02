@@ -42,7 +42,7 @@
               <label for="tags">Looking for something in particular?</label>
               <select name="tags" class="filter form-control">
                 <option value="none">Anything</option>
-                <option ng-repeat="(value, display) in tags" value="{{value}}" >{{display}}</option>
+                <option ng-repeat="tag in tags" value="{{tag["value"]}}" >{{tag["display"]}}</option>
               </select>
             </div>
           </div>
