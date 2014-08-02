@@ -11,7 +11,6 @@ app.controller('placesController', [ '$scope', '$http', '$sanitize', function($s
     $scope.places = _.map(places, function (place) {
       place.displayPhone = formatLocal("US", place.phone)
       place.tags = !!place.tags ? place.tags.join(" ") : ""
-      console.log(place)
       return place
     })
   })
