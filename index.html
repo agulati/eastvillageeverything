@@ -63,7 +63,7 @@
             <div class='col-sm-3'>
               <a target='_blank' href='{{place.url}}'><b ng-bind-html="place.name">{{place.name}}</b></a><br/>
               {{place.address}}<br/>
-              <a href='tel:+{{place.phone}}'>{{place.displayPhone}}</a>
+              <a href='tel:{{place.phone}}'>{{place.displayPhone}}</a>
             </div>
             <div ng-bind-html="place.specials" class='col-sm-5'>
               {{place.specials}}
