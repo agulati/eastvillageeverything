@@ -40,9 +40,11 @@
           <div class='row filters' ng-controller="tagsController" >
             <div class="col-sm-12 form-group">
               <label for="tags">Looking for something in particular?</label>
+
+
               <select name="tags" class="filter form-control">
                 <option value="none">Anything</option>
-                <option ng-repeat="tag in tags" value="{{tag["value"]}}" >{{tag["display"]}}</option>
+                <option ng-repeat="tag in tags" value="{{tag.value}}">{{tag.display}}</option>
               </select>
             </div>
           </div>
