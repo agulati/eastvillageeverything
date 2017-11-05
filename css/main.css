@@ -177,4 +177,12 @@ a.place-name {
   .row.header {
     padding-top: 6em;
   }
+
+  .row.filter-row {
+    margin-bottom: 1em;
+  }
+
+  .row.title {
+    margin-bottom: .5em;
+  }
 }
